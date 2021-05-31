@@ -30,9 +30,8 @@ describe("Get Balance Controller", () => {
     statementsRepository = new StatementsRepository()
   })
 
-  afterAll(async (done) => {
+  afterAll(async () => {
     await connection.close();
-    done()
   })
 
   it("should be able to create a statement", async () => {
