@@ -12,4 +12,10 @@ export namespace CreateStatementError {
       super('Insufficient funds', 400);
     }
   }
+
+  export class TransferenceFromUserToItself extends AppError {
+    constructor() {
+      super('You cannot transfer for yourself', 400);
+    }
+  }
 }
